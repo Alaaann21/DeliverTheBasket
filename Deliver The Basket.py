@@ -1319,7 +1319,7 @@ def main():
             if pg.mixer.music.get_pos() == -1:
                 pg.mixer.music.load('sounds/wav/intro_slow.wav')
                 pg.mixer.music.set_volume(0.3)
-                pg.mixer.music.play()
+                pg.mixer.music.play(4)
             for event in events:
                 screenSelect['main'][1].inputBox.keyEvent(event)
             screenSelect['main'][1].update(event)
